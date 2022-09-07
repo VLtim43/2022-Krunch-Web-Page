@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
        <GlobalStyle/>
-       <Link/>
+       <Link text="a" className="a"/>
     </div>
   )
 }
