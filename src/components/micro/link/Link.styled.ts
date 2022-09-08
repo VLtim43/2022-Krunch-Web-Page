@@ -14,7 +14,12 @@ export const LinkWrapper = styled.div`
     cursor: pointer;
   }
 
-  a:hover {
-    color: #4d8cf5;
+  & .default:hover {
+    color: #0082f3;
+  }
+  
+  & .black { color: #0082f3;}
+  & .black:hover {
+    color: black
   }
 `;
