@@ -10,5 +10,8 @@ export default createGlobalStyle`
 body {
     font-family: nunito, sans-serif;
     background-color: grey;
+    height: 1500px;
 }
+
+
 `

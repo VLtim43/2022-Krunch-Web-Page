@@ -4,6 +4,7 @@ export const LinkWrapper = styled.div`
   display: flex;
 
   a {
+    margin: 0 !important;
     text-transform: uppercase;
     color: white;
     font-size: 1rem;
@@ -12,12 +13,16 @@ export const LinkWrapper = styled.div`
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
+    
+    
+    padding: 30px 18px;
+
   }
 
   & .default:hover {
     color: #0082f3;
   }
-  
+
   & .black { color: #0082f3;}
   & .black:hover {
     color: black

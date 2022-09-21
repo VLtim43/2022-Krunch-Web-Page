@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
-  background-color: rgba(34, 34, 34, .9);
+  background-color: rgba(34, 34, 34, .7);
   display: flex;
   justify-content: center;
  
@@ -9,8 +9,8 @@ export const HeaderWrapper = styled.header`
    display: flex;
    justify-content:space-between;
    flex-direction: row;
-   margin-left: 4.6rem;
-   margin-right: 4.6rem;
+   margin-left: 12rem;
+   margin-right: 12rem;
    width: 100%;
    max-width: 1300px;
 
@@ -18,7 +18,7 @@ export const HeaderWrapper = styled.header`
   }
 
   nav {
-    background-color: red;
+   
     display: flex;
     justify-content: space-around;
   }
