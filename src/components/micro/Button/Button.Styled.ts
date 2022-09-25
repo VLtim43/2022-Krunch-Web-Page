@@ -5,7 +5,6 @@ export const ButtonWrapper = styled.div`
 
   button {
     font-family: 'Open Sans', sans-serif;
-
     margin: 10px;
     padding: 10px 30px;
    
@@ -21,9 +20,9 @@ export const ButtonWrapper = styled.div`
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
-    font-weight : 500;
-    -webkit-transition: all 400ms ease-in-out;
-    transition: all 400ms ease-in-out;
+    font-weight : 600;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
   }
 
   .default {
@@ -39,6 +38,15 @@ export const ButtonWrapper = styled.div`
     color: black;
   }
 
+
+  .transparent:hover {
+    background-color:  #3898ec;
+  }
+
+  .transparent-b:hover {
+    background-color:  #3898ec;
+    color: white;
+  }
 
 
   button:hover {
