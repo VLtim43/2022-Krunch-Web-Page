@@ -4,6 +4,9 @@ export const HeaderWrapper = styled.header`
   background-color: rgba(34, 34, 34, .7);
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
  
   .header-div {
    display: flex;
@@ -13,8 +16,6 @@ export const HeaderWrapper = styled.header`
    margin-right: 12rem;
    width: 100%;
    max-width: 1300px;
-
-   
   }
 
   nav {
