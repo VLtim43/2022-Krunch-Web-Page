@@ -4,7 +4,7 @@ import GlobalStyle from "./styles/global"
 
 
 import Header from "./components/components/Header/Header"
-import Image from "./components/micro/img/Image"
+import Button from './components/micro/Button/Button';
 
 function App() {
   
@@ -13,6 +13,9 @@ function App() {
     <div className="App">
        <GlobalStyle/>
        <Header/>
+       <Button text='Download Now' className='default'/>
+       <Button text='View Features' className='transparent'/>
+       <Button text='Contact Now' className='transparent-b'/>
     </div>
   )
 }

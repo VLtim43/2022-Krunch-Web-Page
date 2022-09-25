@@ -4,7 +4,6 @@ import { LinkWrapper } from "./Link.styled"
 type Props = { 
     text : string, 
     className : string,
-   
     href? : string
 }; 
 
