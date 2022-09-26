@@ -10,7 +10,10 @@ export default createGlobalStyle`
 
 body {
     background-color: grey;
-    height: 1000px;
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 

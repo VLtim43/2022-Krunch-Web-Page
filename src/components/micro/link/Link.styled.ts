@@ -15,7 +15,7 @@ export const LinkWrapper = styled.div`
     cursor: pointer;
     
     
-    padding: 30px 18px;
+    
 
   }
 

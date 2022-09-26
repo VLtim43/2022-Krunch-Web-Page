@@ -5,6 +5,7 @@ import GlobalStyle from "./styles/global"
 
 import Header from "./components/components/Header/Header"
 import Button from './components/micro/Button/Button';
+import Footer from './components/components/Footer/Footer';
 
 function App() {
   
@@ -13,9 +14,8 @@ function App() {
     <div className="App">
        <GlobalStyle/>
        <Header/>
-       <Button text='Download Now' className='default'/>
-       <Button text='View Features' className='transparent'/>
-       <Button text='Contact Now' className='transparent-b'/>
+       <Footer/>
+       
     </div>
   )
 }

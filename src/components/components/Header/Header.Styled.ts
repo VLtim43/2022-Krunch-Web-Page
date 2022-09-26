@@ -23,7 +23,7 @@ export const HeaderWrapper = styled.header`
   }
 
   a{
-    margin: 30px 20px;
+    padding: 30px 18px;
   }
 
   img{
