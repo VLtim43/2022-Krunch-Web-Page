@@ -18,29 +18,30 @@ export const FooterWrapper = styled.footer`
     font-size: 13px;
     line-height: 1;
     text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
   }
 
   .links {
     display: flex;
     justify-content: space-around;
     width: 330px;
-    padding: 15px;
+    padding: 18px;
+    padding-bottom: 10px;
   }
 
   .about {
     display: flex;
     justify-content: space-around;
-    width: 600px;
     padding: 10px;
   }
 
   .about-text {
-    width: 100%;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     color: #777;
     text-transform: uppercase;
-    font-size: 13px;
+    
     line-height: 1;
   }
 `;
