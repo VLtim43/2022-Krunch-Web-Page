@@ -9,9 +9,7 @@ export default createGlobalStyle`
 }
 
 body {
-    background-color: grey;
     
-   
     display: flex;
     flex-direction: column;
 }
