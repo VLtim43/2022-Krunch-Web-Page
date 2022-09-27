@@ -13,18 +13,18 @@ export const LinkWrapper = styled.div`
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    
-    
-    
-
   }
 
   & .default:hover {
     color: #0082f3;
   }
 
-  & .black { color: #0082f3;}
+  & .black {
+    color: #0082f3;
+    display: flex;
+    align-items: center;
+  }
   & .black:hover {
-    color: black
+    color: black;
   }
 `;
