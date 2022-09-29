@@ -10,9 +10,6 @@ export const FooterWrapper = styled.footer`
   align-items: center;
   padding: 22px 0px 10px 0px;
 
-  position: fixed;
-  left: 0;
-  bottom: 0;
 
   a {
     font-size: 13px;

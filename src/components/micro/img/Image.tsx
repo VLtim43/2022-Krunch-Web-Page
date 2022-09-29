@@ -9,7 +9,7 @@ type Props = {
 const Image = () => 
 
 <ImageWrapper >
-   
+   <img src={backgroundImg}/>
 </ImageWrapper>
 
 

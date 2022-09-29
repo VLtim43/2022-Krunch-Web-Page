@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
-  background-color: rgba(34, 34, 34, .7);
+  background-color: rgba(0, 0, 0, .8);
   display: flex;
   justify-content: center;
   width: 100%;
+
+  height: 100%;
  
   .header-div {
    display: flex;
