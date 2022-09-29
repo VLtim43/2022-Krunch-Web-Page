@@ -6,8 +6,6 @@ export const HeaderWrapper = styled.header`
   justify-content: center;
   width: 100%;
 
-  height: 100%;
- 
   .header-div {
    display: flex;
    justify-content:space-between;
@@ -16,6 +14,7 @@ export const HeaderWrapper = styled.header`
    margin-right: 12rem;
    width: 100%;
    max-width: 1300px;
+   height: 700px;
   }
 
   nav {
@@ -26,6 +25,7 @@ export const HeaderWrapper = styled.header`
 
   a{
     padding: 30px 18px;
+    height: 30px;
   }
 
   img{
