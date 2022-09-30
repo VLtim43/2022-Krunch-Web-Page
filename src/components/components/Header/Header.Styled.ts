@@ -5,6 +5,7 @@ export const HeaderWrapper = styled.header`
   padding-top: 1.5rem;
   display: flex;
   justify-content: center;
+  
   width: 100%;
 
   .header-div {
@@ -15,11 +16,10 @@ export const HeaderWrapper = styled.header`
    margin-right: 5rem;
    width: 100%;
    max-width: 1300px;
-   height: 700px;
+   height: 600px;
   }
 
   nav {
-   
     display: flex;
     justify-content: space-around;
   }
