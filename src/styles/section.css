@@ -10,3 +10,17 @@
     margin-top: 100px;
 }
 
+.section-content {
+    display: flex;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    
+    margin-top: 50px;
+}
+
+.section-content p {
+    display: flex;
+    align-items: center;
+    
+}
+

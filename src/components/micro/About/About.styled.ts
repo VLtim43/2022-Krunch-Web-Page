@@ -10,6 +10,7 @@ export const AboutWrapper = styled.div`
   color: #333;
   line-height: 36px;
 
+
   h2 {
     text-transform: uppercase;
     margin-top: 20px;
@@ -20,7 +21,7 @@ export const AboutWrapper = styled.div`
 
   p {
     font-style: italic;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
     color: #5c5c5c;
     font-weight: 400;

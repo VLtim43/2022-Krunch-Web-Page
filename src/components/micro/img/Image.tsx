@@ -1,15 +1,15 @@
 import React from "react";
 import { ImageWrapper } from "./Image.styled"
-import backgroundImg from "../../../../public/background.jpg";
 
 type Props = { 
-    
+    file: string;
+    Id: string;
 }; 
 
-const Image = () => 
+const Image = ({file, Id}:Props) => 
 
 <ImageWrapper >
-   <img src={backgroundImg}/>
+   <img src={file} id={Id}/>
 </ImageWrapper>
 
 

@@ -14,6 +14,13 @@ body {
     flex-direction: column;
     position:relative;
     height: 1500px;
+
+
+    font-family: 'Open Sans', sans-serif;
+    color: #5c5c5c;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
 }
 
 

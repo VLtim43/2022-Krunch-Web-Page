@@ -12,8 +12,8 @@ export const HeaderWrapper = styled.header`
    display: flex;
    justify-content:space-between;
    flex-direction: row;
-   margin-left: 5rem;
-   margin-right: 5rem;
+   margin-left: 8rem;
+   margin-right: 8rem;
    width: 100%;
    max-width: 1300px;
    height: 600px;
