@@ -10,7 +10,7 @@ export const LinkWrapper = styled.div`
     font-size: 1rem;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     cursor: pointer;
   }

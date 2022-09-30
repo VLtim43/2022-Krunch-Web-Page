@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
   background-color: rgba(0, 0, 0, .8);
+  padding-top: 1.5rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -10,8 +11,8 @@ export const HeaderWrapper = styled.header`
    display: flex;
    justify-content:space-between;
    flex-direction: row;
-   margin-left: 12rem;
-   margin-right: 12rem;
+   margin-left: 5rem;
+   margin-right: 5rem;
    width: 100%;
    max-width: 1300px;
    height: 700px;
