@@ -5,9 +5,7 @@ export const HeaderWrapper = styled.header`
   padding-top: 1.5rem;
   display: flex;
   justify-content: center;
-  max-height: 110px;
-  width: 100vw;
-  
+ 
 
   .header-div {
    display: flex;
@@ -27,10 +25,13 @@ export const HeaderWrapper = styled.header`
   a{
     padding: 30px 18px;
     height: 30px;
+    font-weight: 500;
   }
 
   img{
     margin: 30px 20px;
+    width: 126.1px;
+    height:  29.3px;
   }
  
  

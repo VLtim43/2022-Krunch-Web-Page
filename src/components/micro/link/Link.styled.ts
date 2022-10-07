@@ -7,7 +7,7 @@ export const LinkWrapper = styled.div`
     margin: 0 !important;
     text-transform: uppercase;
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     font-weight: 400;

@@ -1,25 +1,55 @@
-
 .header-section {
-    
-    
     background-image: url("../../public/background.jpg");
-    background-size:cover;
-    height: 900px;
-   
+    background-size: cover;
 }
+
+.inner-header {
+    background-color: rgba(0, 0, 0, .8);
+    height: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-h1 {
+
+    color: #fff;
+    font-size: 65px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.inner-h3 {
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-weight: lighter;
+    width: 70%;
+    text-align: center;
+}
+
+.button-div {
+    margin-top: 40px;
+    display: flex;
+
+}
+
 
 
 .about-section {
     margin: auto;
-    max-width: 1920px;    
+    max-width: 1920px;
 }
 
 .section-content {
     display: flex;
     min-width: 800px;
     justify-content: space-between;
-    margin-left: 90px;    
-    margin-right: 90px;    
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 .section-content p {
@@ -27,6 +57,3 @@
     align-items: center;
     max-width: 700px;
 }
-
-
-

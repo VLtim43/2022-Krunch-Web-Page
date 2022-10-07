@@ -13,7 +13,18 @@ function App() {
       <GlobalStyle />
 
       <section className="header-section">
-        <Header />
+        <Header/>
+        <div className="inner-header">
+          <h1 className="inner-h1">Clean and Flexible Template</h1>
+          <h3 className="inner-h3">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. </h3>
+         
+          <div className="button-div">
+          <Button className="default" text="download now"/>
+          <Button className="transparent" text="view features"/>
+          </div>
+
+        </div>
         
       </section>
 

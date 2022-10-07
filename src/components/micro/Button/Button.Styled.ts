@@ -7,13 +7,13 @@ export const ButtonWrapper = styled.div`
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
     padding: 10px 30px;
-   
+   font-size: 18px;
     border-radius: 5px;
     background-color: #4d8cf5;
     color: #fff;
     text-transform: uppercase;
     display: inline-block;
-    padding: 9px 15px;
+    padding: 12px 30px;
     background-color: #3898ec;
     color: white;
     border: 1px solid #3898ec;
@@ -50,6 +50,6 @@ export const ButtonWrapper = styled.div`
 
 
   button:hover {
-    background-color: #4B4B4B;
+    background-color: #252525;
   }
 `;

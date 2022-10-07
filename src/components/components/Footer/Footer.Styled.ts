@@ -17,7 +17,7 @@ export const FooterWrapper = styled.footer`
 
 
   a {
-    font-size: 13px;
+    font-size: 13px !important;
     line-height: 1;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
