@@ -5,8 +5,9 @@ export const HeaderWrapper = styled.header`
   padding-top: 1.5rem;
   display: flex;
   justify-content: center;
+  max-height: 110px;
+  width: 100vw;
   
-  width: 100%;
 
   .header-div {
    display: flex;
@@ -16,7 +17,6 @@ export const HeaderWrapper = styled.header`
    margin-right: 8rem;
    width: 100%;
    max-width: 1300px;
-   height: 600px;
   }
 
   nav {

@@ -1,26 +1,32 @@
+
 .header-section {
+    
+    
     background-image: url("../../public/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%; 
-    position: relative;
+    background-size:cover;
+    height: 900px;
+   
 }
 
 
 .about-section {
-    margin-top: 100px;
+    margin: auto;
+    max-width: 1920px;    
 }
 
 .section-content {
     display: flex;
-    margin-left: 8rem;
-    margin-right: 8rem;
-    
-    margin-top: 50px;
+    min-width: 800px;
+    justify-content: space-between;
+    margin-left: 90px;    
+    margin-right: 90px;    
 }
 
 .section-content p {
     display: flex;
     align-items: center;
-    
+    max-width: 700px;
 }
+
+
 

@@ -14,9 +14,10 @@ function App() {
 
       <section className="header-section">
         <Header />
+        
       </section>
 
-      <section className="about-section">
+      <div className="a"><section className="about-section">
         <About
           smallText="Setibulum rutrum quam vitae fringilla tincidunt"
           bigText="About us"
@@ -38,7 +39,7 @@ function App() {
 
           <Image file="../public/glasses.jpg" Id="glasses" />
         </div>
-      </section>
+      </section></div>
 
       <Footer />
     </div>
