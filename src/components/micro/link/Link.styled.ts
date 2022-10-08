@@ -27,4 +27,5 @@ export const LinkWrapper = styled.div`
   & .black:hover {
     color: black;
   }
+
 `;

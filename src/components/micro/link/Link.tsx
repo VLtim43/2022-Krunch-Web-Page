@@ -5,6 +5,7 @@ type Props = {
     text : string, 
     className : string,
     href? : string
+   
 }; 
 
 const Link = ({ className , text , href }: Props) => 

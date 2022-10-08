@@ -7,7 +7,20 @@ import Footer from "./components/components/Footer/Footer";
 import Image from "./components/micro/img/Image";
 import About from "./components/micro/About/About";
 
+
+import {useRef} from 'react';
+import { BsChevronCompactDown } from 'react-icons/bs';
+
+
+
+
 function App() {
+  const ref = useRef<null | HTMLDivElement>(null); 
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
+
   return (
     <div className="App">
       <GlobalStyle />
@@ -27,16 +40,18 @@ function App() {
             <Button className="default" text="download now" />
             <Button className="transparent" text="view features" />
           </div>
+
+          
         </div>
+        <BsChevronCompactDown color="white" fontSize="2.5em" onClick={handleClick}/>
       </section>
 
-      <div className="a">
-        <section className="about-section">
+      <section className="about-section" ref={ref} >
           <About
             smallText="Setibulum rutrum quam vitae fringilla tincidunt"
             bigText="About us"
           />
-          <div className="section-content">
+          <div className="section-content" >
             <div className="section-content-p">
             <p>
               Lorem ipsum dolor sitamet, consectetur adipisicing elit, seddo
@@ -48,7 +63,7 @@ function App() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             
-            <p>
+            <p >
               Excepteur sint occaecat cupidatat none proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum voluptate dolor.
             </p>
@@ -56,8 +71,8 @@ function App() {
 
             <Image file="../public/glasses.jpg" Id="glasses" />
           </div>
-        </section>
-      </div>
+      </section >
+      
 
       <Footer />
     </div>
