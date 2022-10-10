@@ -1,3 +1,9 @@
+section:not(.header-section) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .header-section {
     background-image: url("../../public/background.jpg");
     background-size: cover;
@@ -36,7 +42,7 @@
 .button-div {
     margin-top: 56px;
     display: flex;
-   
+
 }
 
 
@@ -45,7 +51,7 @@
 .about-section {
     margin: auto;
     max-width: 1920px;
-   
+
 }
 
 .section-content {
@@ -58,7 +64,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+
 }
 
 .section-content p {
@@ -72,7 +78,7 @@
 svg {
     width: 100%;
     display: flex;
-    position:absolute;
+    position: absolute;
     margin-top: -90px;
     cursor: pointer;
 }
@@ -81,3 +87,44 @@ svg {
 #a {
     margin-top: 100px;
 }
+
+/* portfolio */
+.section-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-portfolio p {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 28px;
+    color: #5c5c5c;
+    font-weight: 400;
+}
+
+
+.image-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-grid img {
+    width: 25%;
+}
+
+/* */
+
+
+
+.section-testimonials {
+    height: 400px;
+    background-image: url("../../public/bg.jpg");
+    background-size: cover;
+
+    margin-bottom: 140px;
+   
+}
+
+

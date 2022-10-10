@@ -6,19 +6,13 @@ export const ButtonWrapper = styled.div`
   button {
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
-    padding: 10px 30px;
-   font-size: 18px;
+    padding: 11px 35px;
     border-radius: 5px;
-    background-color: #4d8cf5;
-    color: #fff;
     text-transform: uppercase;
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #3898ec;
+    border: 1px solid #4d8cf5;
+    font-size: 15px;
     color: white;
-    border: 1px solid #3898ec;
-    line-height: inherit;
-    text-decoration: none;
+
     cursor: pointer;
     font-weight : 600;
     -webkit-transition: all 300ms ease-in-out;
@@ -26,10 +20,13 @@ export const ButtonWrapper = styled.div`
   }
 
   .default {
+    
+    background-color:  #3898ec;
     border: 1px solid transparent;
   }
 
   .transparent {
+    
     background-color: transparent;
   }
 

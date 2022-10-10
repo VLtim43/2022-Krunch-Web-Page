@@ -9,6 +9,7 @@ export const AboutWrapper = styled.div`
   font-family: Nunito, sans-serif;
   color: #333;
   line-height: 36px;
+  margin-bottom: 30px;
 
 
   h2 {
@@ -21,7 +22,7 @@ export const AboutWrapper = styled.div`
 
   p {
     font-style: italic;
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 28px;
     color: #5c5c5c;
     font-weight: 400;

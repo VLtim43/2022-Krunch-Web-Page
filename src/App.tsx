@@ -7,40 +7,32 @@ import Footer from "./components/components/Footer/Footer";
 import Image from "./components/micro/img/Image";
 import About from "./components/micro/About/About";
 
-
-import {useRef} from 'react';
-import { BsChevronCompactDown } from 'react-icons/bs';
-
-
-
+import { useRef } from "react";
+import { BsChevronCompactDown } from "react-icons/bs";
 
 function App() {
   //button scroll
-  const ref = useRef<null | HTMLDivElement>(null); 
+  const ref = useRef<null | HTMLDivElement>(null);
   const handleClick = () => {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
+    ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-//
+  //
   const [scroll, setScroll] = useState(false);
- useEffect(() => {
-   window.addEventListener("scroll", () => {
-     setScroll(window.scrollY > 605);
-   });
- }, []);
-
-
-
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 505);
+    });
+  }, []);
 
   return (
-    <div className="App" >
+    <div className="App">
       <GlobalStyle />
 
       <section className="header-section">
-
         <Header test={scroll ? "a" : "b"} />
 
-        <div className="inner-header" id={scroll ? "a" : "b"} >
+        <div className="inner-header" id={scroll ? "a" : "b"}>
           <h1 className="inner-h1">Clean and Flexible Template</h1>
           <h3 className="inner-h3">
             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
@@ -53,20 +45,23 @@ function App() {
             <Button className="default" text="download now" />
             <Button className="transparent" text="view features" />
           </div>
-
-          
         </div>
 
-        <BsChevronCompactDown color="white" fontSize="2.5em" onClick={handleClick} className="pageDown"/>
+        <BsChevronCompactDown
+          color="white"
+          fontSize="2.5em"
+          onClick={handleClick}
+          className="pageDown"
+        />
       </section>
 
-      <section className="about-section" ref={ref} >
-          <About
-            smallText="Setibulum rutrum quam vitae fringilla tincidunt"
-            bigText="About us"
-          />
-          <div className="section-content" >
-            <div className="section-content-p">
+      <section className="about-section" ref={ref}>
+        <About
+          bigText="About us"
+          smallText="Setibulum rutrum quam vitae fringilla tincidunt" 
+        />
+        <div className="section-content">
+          <div className="section-content-p">
             <p>
               Lorem ipsum dolor sitamet, consectetur adipisicing elit, seddo
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -76,17 +71,83 @@ function App() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            
-            <p >
+
+            <p>
               Excepteur sint occaecat cupidatat none proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum voluptate dolor.
             </p>
-            </div>
-
-            <Image file="../public/glasses.jpg" Id="glasses" />
           </div>
-      </section >
-      
+
+          <Image file="../public/glasses.jpg" Id="glasses" />
+        </div>
+      </section>
+
+      <section className="section-portfolio">
+        <About
+          bigText="Portfolio"
+          smallText="An eye for detail makes our work beautiful"
+        />
+
+       
+          <div className="image-grid">
+            <img src="../public/glasses.jpg"/>
+            <img src="../public/glasses.jpg"/>
+            <img src="../public/glasses.jpg"/>
+            <img src="../public/glasses.jpg"/>
+            <img src="../public/glasses.jpg"/>
+            <img src="../public/glasses.jpg"/>
+            <img src="../public/glasses.jpg"/>
+            <img src="../public/glasses.jpg"/>
+          </div>
+
+
+        
+
+
+        <p>Have a Project in Mind?</p>
+        <Button className="transparent-b" text="contact now" />
+      </section>
+
+      <section className="section-testimonials">
+          
+      </section>
+
+
+      <section className="section-services">
+        <About
+            bigText="Services"
+            smallText="Scope of our featured premium services" 
+          />
+      </section>
+
+
+      <section className="section-team">
+        <About
+            bigText="awsome team"
+            smallText="Setibulum rutrum quam vitae fringilla tincidunt" 
+          />
+      </section>
+
+
+      <section className="section-news">
+        <About
+            bigText="latest news"
+            smallText="Check out our latest news and activities" 
+          />
+
+        <Button className="transparent-b" text="read our blog" />
+      </section>
+
+
+      <section className="section-contact">
+        <About
+            bigText="keep in touch"
+            smallText="Setibulum rutrum quam vitae fringilla tincidunt" 
+          />
+        
+        <Button className="default" text="send message" />
+          
+      </section>
 
       <Footer />
     </div>

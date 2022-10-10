@@ -9,9 +9,9 @@ export const FooterWrapper = styled.footer`
   flex-direction: column;
   align-items: center;
   padding: 22px 0px 10px 0px;
+  margin-top: 60px;
 
-  position:absolute;
-  bottom:0;
+  
   width:100%;
   
 
