@@ -2,11 +2,14 @@ import React from "react";
 import { HeaderWrapper } from "./Header.Styled";
 import Link from "../../micro/link/Link";
 
+interface Props {
+  test?: any
+}
 
 
+const Header = ({test} : Props) =>  (
 
-const Header = () => (
-  <HeaderWrapper>
+  <HeaderWrapper className={test} >
     <div className="header-div" >
       <img
         src="https://daks2k3a4ib2z.cloudfront.net/57c2c646739f273554acc4af/57c2da8652f6a18001ef1ce6_logo.png"

@@ -5,9 +5,25 @@ export const HeaderWrapper = styled.header`
   padding-top: 1.5rem;
   display: flex;
   justify-content: center;
+  height: 100px;
  
+  
+
+ &.a {
+  background-color: rgba(0, 0, 0, .9);
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+ }
+
+
+ &.b {
+  position: sticky;
+ }
 
   .header-div {
+   position: sticky;
    display: flex;
    justify-content:space-between;
    flex-direction: row;

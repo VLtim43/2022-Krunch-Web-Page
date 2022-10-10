@@ -15,19 +15,32 @@ import { BsChevronCompactDown } from 'react-icons/bs';
 
 
 function App() {
+  //button scroll
   const ref = useRef<null | HTMLDivElement>(null); 
-
   const handleClick = () => {
     ref.current?.scrollIntoView({behavior: 'smooth'});
   };
 
+//
+  const [scroll, setScroll] = useState(false);
+ useEffect(() => {
+   window.addEventListener("scroll", () => {
+     setScroll(window.scrollY > 605);
+   });
+ }, []);
+
+
+
+
   return (
-    <div className="App">
+    <div className="App" >
       <GlobalStyle />
 
       <section className="header-section">
-        <Header />
-        <div className="inner-header">
+
+        <Header test={scroll ? "a" : "b"} />
+
+        <div className="inner-header" id={scroll ? "a" : "b"} >
           <h1 className="inner-h1">Clean and Flexible Template</h1>
           <h3 className="inner-h3">
             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
@@ -43,7 +56,8 @@ function App() {
 
           
         </div>
-        <BsChevronCompactDown color="white" fontSize="2.5em" onClick={handleClick}/>
+
+        <BsChevronCompactDown color="white" fontSize="2.5em" onClick={handleClick} className="pageDown"/>
       </section>
 
       <section className="about-section" ref={ref} >
