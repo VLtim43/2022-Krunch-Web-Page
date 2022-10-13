@@ -43,21 +43,25 @@ function App() {
             erat.{" "}
           </h3>
 
-          <div className="button-div">
+          <div className="button-div"  >
             <Button className="default" text="download now" />
-            <Button className="transparent" text="view features" />
+            <Button  className="transparent" text="view features" />
           </div>
         </div>
-
+        
         <BsChevronCompactDown
+        
           color="white"
           fontSize="2.5em"
           onClick={handleClick}
           className="pageDown"
         />
-      </section>
 
-      <section className="about-section" ref={ref}>     
+      
+      </section>
+     
+      <section className="about-section" >     
+      <span ref={ref}></span>
         <About
           bigText="About us"
           smallText="Setibulum rutrum quam vitae fringilla tincidunt"
@@ -80,7 +84,7 @@ function App() {
             </p>
           </div>
 
-          <Image file="../public/glasses.jpg" id="glasses" />
+          <Image file="../glasses.jpg" id="glasses" />
         </div>
       </section>
 
@@ -93,14 +97,14 @@ function App() {
        
          
         <div className="image-grid">
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
+         <Image file="../public/glasses.jpg" id="grid" text="graphic design"/>
+         <Image file="../public/glasses.jpg" id="grid" text="print design"/>
+         <Image file="../public/glasses.jpg" id="grid" text="mobile design"/>
+         <Image file="../public/glasses.jpg" id="grid" text="3d design"/>
+         <Image file="../public/glasses.jpg" id="grid" text="interior design"/>
+         <Image file="../public/glasses.jpg" id="grid" text="web design"/>
+         <Image file="../public/glasses.jpg" id="grid" text="graphic design"/>
+         <Image file="../public/glasses.jpg" id="grid" text="home design"/>
         </div> 
 
 

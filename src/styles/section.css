@@ -125,14 +125,17 @@ section:not(.header-section) {
 
 
 .image-grid {
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10rem;
 }
 
 
 
 .image-grid div {
+
+    height: 200px;
     width: 25%;
 }
 
@@ -190,7 +193,7 @@ section:not(.header-section) {
     grid-template-columns: 33% 33% 33%;
     grid-gap: 1rem;
 
-    margin-bottom: 10rem;
+  
 }
 
 
