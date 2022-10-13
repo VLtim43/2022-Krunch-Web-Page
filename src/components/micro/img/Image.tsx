@@ -8,14 +8,22 @@ type Props = {
 
 const Image = ({ file, id }: Props) => {
 
-    return (
-      <ImageWrapper className="container">
-        <img src={file} className="image" id={id}/>
-        <div className="overlay">
-          <div className="text">Hello World</div>
-        </div>
-      </ImageWrapper>
-    )
+    if(id == "grid") {
+        return (
+            <ImageWrapper className= 'container' >
+              <img src={file} className="image" id={id}/>
+              <div className="overlay">
+                <div className='text'>Hello World</div>
+              </div>
+            </ImageWrapper>
+          )
+    } else {
+        return (
+            <ImageWrapper >
+              <img src={file} className="image" id={id}/>
+            </ImageWrapper>
+          )
+    }
 
 }
 

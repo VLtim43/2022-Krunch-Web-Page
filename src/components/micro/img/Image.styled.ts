@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 export const ImageWrapper = styled.div`
-    background-color: red;
-
     position: relative;
   
     
     img {
         height: 100% !important;
-       
     }
 
 
@@ -22,7 +19,7 @@ export const ImageWrapper = styled.div`
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(77,140,245,0.7);
+  background-color: rgba(77,140,245,0.8);
 }
 
 &:hover .overlay {
@@ -39,6 +36,10 @@ export const ImageWrapper = styled.div`
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.default {
+    display: none;
 }
 
    
