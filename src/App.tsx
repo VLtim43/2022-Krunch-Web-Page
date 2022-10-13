@@ -57,10 +57,7 @@ function App() {
         />
       </section>
 
-      <section className="about-section" ref={ref}>
-      
-
-     
+      <section className="about-section" ref={ref}>     
         <About
           bigText="About us"
           smallText="Setibulum rutrum quam vitae fringilla tincidunt"
@@ -83,32 +80,35 @@ function App() {
             </p>
           </div>
 
-          <Image file="../public/glasses.jpg" Id="glasses" />
+          <Image file="../public/glasses.jpg" id="glasses" />
         </div>
       </section>
 
-      {/* <section className="section-portfolio">
+      <section className="section-portfolio">
         <About
           bigText="Portfolio"
           smallText="An eye for detail makes our work beautiful"
         />
 
+       
+         
         <div className="image-grid">
-          <img src="../public/glasses.jpg" />
-          <img src="../public/glasses.jpg" />
-          <img src="../public/glasses.jpg" />
-          <img src="../public/glasses.jpg" />
-          <img src="../public/glasses.jpg" />
-          <img src="../public/glasses.jpg" />
-          <img src="../public/glasses.jpg" />
-          <img src="../public/glasses.jpg" />
-        </div>
+         <Image file="../public/glasses.jpg" id="grid" />
+         <Image file="../public/glasses.jpg" id="grid" />
+         <Image file="../public/glasses.jpg" id="grid" />
+         <Image file="../public/glasses.jpg" id="grid" />
+         <Image file="../public/glasses.jpg" id="grid" />
+         <Image file="../public/glasses.jpg" id="grid" />
+         <Image file="../public/glasses.jpg" id="grid" />
+         <Image file="../public/glasses.jpg" id="grid" />
+        </div> 
+
 
         <p>Have a Project in Mind?</p>
         <Button className="transparent-b" text="contact now" id="contact" />
       </section>
 
-      <section className="section-testimonials"></section> */}
+      {/* <section className="section-testimonials"></section> */}
 
       <section className="section-services">
         <About

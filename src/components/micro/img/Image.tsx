@@ -1,16 +1,37 @@
 import React from "react";
-import { ImageWrapper } from "./Image.styled"
+import { ImageWrapper } from "./Image.styled";
 
-type Props = { 
-    file: string;
-    Id: string;
-}; 
+type Props = {
+  file: string;
+  id: string;
+};
 
-const Image = ({file, Id}:Props) => 
+const Image = ({ file, id }: Props) => {
 
-<ImageWrapper >
-   <img src={file} id={Id}/>
-</ImageWrapper>
+    return (
+      <ImageWrapper className="container">
+        <img src={file} className="image" id={id}/>
+        <div className="overlay">
+          <div className="text">Hello World</div>
+        </div>
+      </ImageWrapper>
+    )
+
+}
 
 
-export default Image
+
+  {/* <ImageWrapper className="container">
+    <img src={file} id={Id} />
+    <div className="middle">
+      <p className="text">John Doe</p>
+    </div>
+  </ImageWrapper> */}
+
+
+            
+
+  
+
+
+export default Image;

@@ -22,7 +22,7 @@ export const AboutWrapper = styled.div`
 
   p {
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 28px;
     color: #5c5c5c;
     font-weight: 400;

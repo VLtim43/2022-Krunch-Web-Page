@@ -24,15 +24,7 @@ body {
 }
 
 
-::-moz-selection { /* Code for Firefox */
 
-  background: #505050;
-}
-
-::selection {
-    
-  background: #505050;
-}
 
 
 `;

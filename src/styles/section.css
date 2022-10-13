@@ -29,8 +29,17 @@ section:not(.header-section) {
     text-transform: uppercase;
 }
 
+.inner-h1::-moz-selection {
+    /* Code for Firefox */
+    background: #505050;
+}
+
+.inner-h1::selection {
+    background: #505050;
+}
+
 .inner-h3 {
-    
+
     font-size: 1.2rem;
     margin-top: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -38,6 +47,15 @@ section:not(.header-section) {
     font-weight: lighter;
     width: 70%;
     text-align: center;
+}
+
+.inner-h3::-moz-selection {
+    /* Code for Firefox */
+    background: #505050;
+}
+
+.inner-h3::selection {
+    background: #505050;
 }
 
 .button-div {
@@ -96,6 +114,7 @@ section:not(.header-section) {
     align-items: center;
 }
 
+
 .section-portfolio p {
     font-style: italic;
     font-size: 20px;
@@ -106,14 +125,38 @@ section:not(.header-section) {
 
 
 .image-grid {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
 }
 
-.image-grid img {
+
+
+.image-grid div {
     width: 25%;
 }
+
+.image-grid div img {
+
+    width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .image-grid {
+        width: auto;
+    }
+
+    .image-grid div {
+        width: 50%;
+
+    }
+}
+
+
 
 /* */
 
@@ -147,6 +190,9 @@ section:not(.header-section) {
     grid-template-columns: 33% 33% 33%;
     grid-gap: 1rem;
 
-    margin-bottom:  10rem;
+    margin-bottom: 10rem;
 }
+
+
+
 
