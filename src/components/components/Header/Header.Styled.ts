@@ -18,9 +18,7 @@ export const HeaderWrapper = styled.header`
  }
 
 
- &.b {
-  position: sticky;
- }
+ 
 
   .header-div {
    position: sticky;
@@ -39,6 +37,7 @@ export const HeaderWrapper = styled.header`
   }
 
   a{
+    font-size: 16px;
     padding: 30px 18px;
     height: 30px;
     font-weight: 500;
@@ -46,8 +45,8 @@ export const HeaderWrapper = styled.header`
 
   img{
     margin: 30px 20px;
-    width: 126.1px;
-    height:  29.3px;
+    width: 110px;
+    height:  25.3px;
   }
  
  

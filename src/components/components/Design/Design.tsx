@@ -43,7 +43,7 @@ let Icon
 
   return (
     <DesignWrapper>
-        <p>{Icon}</p>
+      <div className="icon-div">{Icon}</div>
       <h2>{bigText}</h2>
       <p>{smallText}</p>
     </DesignWrapper>

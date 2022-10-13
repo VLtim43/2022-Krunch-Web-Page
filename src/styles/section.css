@@ -30,6 +30,7 @@ section:not(.header-section) {
 }
 
 .inner-h3 {
+    
     font-size: 1.2rem;
     margin-top: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -42,7 +43,6 @@ section:not(.header-section) {
 .button-div {
     margin-top: 56px;
     display: flex;
-
 }
 
 
@@ -50,7 +50,7 @@ section:not(.header-section) {
 
 .about-section {
     margin: auto;
-    max-width: 1920px;
+    width: 1300px;
 
 }
 
@@ -110,6 +110,7 @@ section:not(.header-section) {
     display: flex;
     flex-wrap: wrap;
 }
+
 .image-grid img {
     width: 25%;
 }
@@ -124,7 +125,7 @@ section:not(.header-section) {
     background-size: cover;
 
     margin-bottom: 140px;
-   
+
 }
 
 
@@ -132,5 +133,20 @@ section:not(.header-section) {
 #contact {
     margin-top: 40px;
     margin-bottom: 80px;
+}
+
+
+.service-grid {
+
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+    min-width: 1000px;
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 1rem;
+
+    margin-bottom:  10rem;
 }
 

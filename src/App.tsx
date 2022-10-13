@@ -87,7 +87,7 @@ function App() {
         </div>
       </section>
 
-      <section className="section-portfolio">
+      {/* <section className="section-portfolio">
         <About
           bigText="Portfolio"
           smallText="An eye for detail makes our work beautiful"
@@ -108,7 +108,7 @@ function App() {
         <Button className="transparent-b" text="contact now" id="contact" />
       </section>
 
-      <section className="section-testimonials"></section>
+      <section className="section-testimonials"></section> */}
 
       <section className="section-services">
         <About
@@ -116,8 +116,15 @@ function App() {
           smallText="Scope of our featured premium services"
         />
 
-        <Design bigText={"AAAAAAA"} smallText={"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"} icon={"monitor"}/>
-        
+       <div className="service-grid">
+        <Design bigText={"web design"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"monitor"}/>
+        <Design bigText={"web design"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"web"}/>
+        <Design bigText={"apps design"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"android"}/>
+        <Design bigText={"PHOTOGRAPHY"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"camera"}/>
+        <Design bigText={"branding"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"wand"}/>
+        <Design bigText={"hosting"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"globe"}/>
+       </div>
+
       </section>
 
       <section className="section-team">
