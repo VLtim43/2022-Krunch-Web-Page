@@ -6,9 +6,11 @@ import Button from "./components/micro/Button/Button";
 import Footer from "./components/components/Footer/Footer";
 import Image from "./components/micro/img/Image";
 import About from "./components/micro/About/About";
+import { Design } from "./components/components/Design/Design";
 
 import { useRef } from "react";
 import { BsChevronCompactDown } from "react-icons/bs";
+
 
 function App() {
   //button scroll
@@ -56,9 +58,12 @@ function App() {
       </section>
 
       <section className="about-section" ref={ref}>
+      
+
+     
         <About
           bigText="About us"
-          smallText="Setibulum rutrum quam vitae fringilla tincidunt" 
+          smallText="Setibulum rutrum quam vitae fringilla tincidunt"
         />
         <div className="section-content">
           <div className="section-content-p">
@@ -88,65 +93,56 @@ function App() {
           smallText="An eye for detail makes our work beautiful"
         />
 
-       
-          <div className="image-grid">
-            <img src="../public/glasses.jpg"/>
-            <img src="../public/glasses.jpg"/>
-            <img src="../public/glasses.jpg"/>
-            <img src="../public/glasses.jpg"/>
-            <img src="../public/glasses.jpg"/>
-            <img src="../public/glasses.jpg"/>
-            <img src="../public/glasses.jpg"/>
-            <img src="../public/glasses.jpg"/>
-          </div>
-
-
-        
-
+        <div className="image-grid">
+          <img src="../public/glasses.jpg" />
+          <img src="../public/glasses.jpg" />
+          <img src="../public/glasses.jpg" />
+          <img src="../public/glasses.jpg" />
+          <img src="../public/glasses.jpg" />
+          <img src="../public/glasses.jpg" />
+          <img src="../public/glasses.jpg" />
+          <img src="../public/glasses.jpg" />
+        </div>
 
         <p>Have a Project in Mind?</p>
-        <Button className="transparent-b" text="contact now" />
+        <Button className="transparent-b" text="contact now" id="contact" />
       </section>
 
-      <section className="section-testimonials">
-          
-      </section>
-
+      <section className="section-testimonials"></section>
 
       <section className="section-services">
         <About
-            bigText="Services"
-            smallText="Scope of our featured premium services" 
-          />
-      </section>
+          bigText="Services"
+          smallText="Scope of our featured premium services"
+        />
 
+        <Design bigText={"AAAAAAA"} smallText={"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"} icon={"monitor"}/>
+        
+      </section>
 
       <section className="section-team">
         <About
-            bigText="awsome team"
-            smallText="Setibulum rutrum quam vitae fringilla tincidunt" 
-          />
+          bigText="awsome team"
+          smallText="Setibulum rutrum quam vitae fringilla tincidunt"
+        />
       </section>
-
 
       <section className="section-news">
         <About
-            bigText="latest news"
-            smallText="Check out our latest news and activities" 
-          />
+          bigText="latest news"
+          smallText="Check out our latest news and activities"
+        />
 
         <Button className="transparent-b" text="read our blog" />
       </section>
 
-
       <section className="section-contact">
         <About
-            bigText="keep in touch"
-            smallText="Setibulum rutrum quam vitae fringilla tincidunt" 
-          />
-        
+          bigText="keep in touch"
+          smallText="Setibulum rutrum quam vitae fringilla tincidunt"
+        />
+
         <Button className="default" text="send message" />
-          
       </section>
 
       <Footer />

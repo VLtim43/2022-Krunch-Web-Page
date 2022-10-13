@@ -3,11 +3,12 @@ import { ButtonWrapper } from "./Button.Styled";
 type Props = { 
     text : string, 
     className?: string,
+    id?: string
 }; 
 
-const Button = ({ className, text} : Props) => (
+const Button = ({ className, text, id} : Props) => (
   <ButtonWrapper>
-   <button className={className}>{text}</button>
+   <button id={id} className={className}>{text}</button>
   </ButtonWrapper>
 );
 
