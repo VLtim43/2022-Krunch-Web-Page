@@ -254,6 +254,15 @@ function App() {
           smallText="Setibulum rutrum quam vitae fringilla tincidunt"
         />
 
+        <form className="form">
+          <div>
+            <input type={"text"}  placeholder="Enter your name"/>
+            <input type={"text"} placeholder="Enter your name"/>
+          </div>
+          <input type={"email"}  placeholder="Enter your email address"/>
+          <textarea placeholder="Your menssage"/>
+        </form>
+
         <Button className="default" text="send message" />
       </section>
 

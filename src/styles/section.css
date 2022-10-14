@@ -177,7 +177,9 @@ section:not(.header-section) {
 }
 
 @media only screen and (max-width: 900px) {
-    .section-testimonials, .section-fake-video {
+
+    .section-testimonials,
+    .section-fake-video {
         display: none !important;
     }
 }
@@ -245,7 +247,7 @@ section:not(.header-section) {
     gap: 1rem;
     grid-template-columns: 25% 25% 25% 25%;
     margin-bottom: 7rem;
-   
+
 }
 
 .team-grid div {
@@ -284,4 +286,48 @@ section:not(.header-section) {
     grid-template-columns: 33% 33% 33%;
     gap: 1rem;
     margin-bottom: 3rem;
+}
+
+
+.form {
+    margin-bottom: 5rem;
+}
+
+.form input {
+    text-indent: 10px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333333;
+
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+
+    height: 50px;
+    margin: 1.3rem 0px;
+    width: 100%;
+}
+
+.form div {
+    display: grid;
+    grid-template-columns: 47% 48%;
+    gap: 5%;
+
+}
+
+
+
+.form textarea {
+    padding-top: 10px;
+    text-indent: 10px;
+
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333333;
+
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+
+    height: 230px;
+    margin: 1.3rem 0px;
+    min-width: 100%;
 }
