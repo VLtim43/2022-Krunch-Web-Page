@@ -5,6 +5,14 @@ export const DesignWrapper = styled.div`
     margin-top: 20px;
     padding: 10px;
 
+    @media only screen and (max-width: 1060px)  {
+      & {
+      width: 90vw;
+       
+      }
+    }
+
+
 
     &:hover {
       background-color: #F9F9F9;

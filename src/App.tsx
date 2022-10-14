@@ -28,9 +28,9 @@ import guy2 from "../public/guy2.jpg"
 import guy3 from "../public/guy3.jpg"
 import guy4 from "../public/guy4.jpg"
 
-import news1 from "../public/news1.jpg"
-import news2 from "../public/news2.jpg"
-import news3 from "../public/news3.jpg"
+import news1 from "../public/news1.jpeg"
+import news2 from "../public/news2.jpeg"
+import news3 from "../public/news3.jpeg"
 
 
 function App() {
@@ -114,7 +114,7 @@ function App() {
 
         <div className="image-grid">
           <Image file={d1} id="grid" text="graphic design" />
-          <Image file={d8} id="grid" text="print design" />
+          <Image file={d6} id="grid" text="print design" />
           <Image file={d5} id="grid" text="mobile design" />
           <Image file={d4} id="grid" text="3d design" />
           <Image
@@ -239,7 +239,7 @@ function App() {
           <News
             text={"Tempor incidunt labore dolor"}
             date={"August 24, 2016"}
-            file={"../public/news1.jpeg"}
+            file={news1}
             smallText={
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
@@ -248,7 +248,7 @@ function App() {
           <News
             text={"Tempor incidunt labore dolor"}
             date={"August 24, 2016"}
-            file={"../public/news2.jpeg"}
+            file={news2}
             smallText={
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
@@ -257,7 +257,7 @@ function App() {
           <News
             text={"Tempor incidunt labore dolor"}
             date={"August 24, 2016"}
-            file={"../public/news3.jpeg"}
+            file={news3}
             smallText={
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }

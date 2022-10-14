@@ -7,6 +7,36 @@ export const HeaderWrapper = styled.header`
   height: 100px;
 
 
+  @media only screen and (max-width: 600px) {
+
+    & {
+      display: none !important;
+    }
+  }
+
+
+  @media only screen and (max-width: 1300px) {
+
+    .header-div {
+      height: 20vw !important;
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .header-div {
+      margin: 0px !important;
+    }
+
+    .header-img {
+      margin-top: 2rem;
+    }
+
+    a {
+      display: none;
+    }
+  }
 
   &.a {
     background-color: rgba(0, 0, 0, 0.8);
@@ -45,6 +75,6 @@ export const HeaderWrapper = styled.header`
   }
 
   img {
-  margin: 2rem 1rem 1rem 5rem;
+    margin: 2rem 1rem 1rem 5rem;
   }
 `;

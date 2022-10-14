@@ -1,8 +1,18 @@
 import styled from "styled-components";
 
 export const ButtonWrapper = styled.div`
+
+
+@media only screen and (max-width: 700px) {
+  button {
+    font-size: 2vw !important;
+  }
+
+}
+
+
+
   display: flex;
- 
   button:focus {outline:0;}
 
   button {
