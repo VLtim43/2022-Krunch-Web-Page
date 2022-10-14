@@ -20,8 +20,7 @@ import d4 from "../public/d4.jpg"
 import d5 from "../public/d5.jpg"
 import d6 from "../public/d6.jpg"
 import d7 from "../public/d7.jpg"
-import d8 from "../public/d8.jpg"
-
+F
 
 import guy1 from "../public/guy1.jpg"
 import guy2 from "../public/guy2.jpg"
@@ -31,6 +30,9 @@ import guy4 from "../public/guy4.jpg"
 import news1 from "../public/news1.jpeg"
 import news2 from "../public/news2.jpeg"
 import news3 from "../public/news3.jpeg"
+
+import play from "../public/play.svg"
+
 
 
 function App() {
@@ -220,7 +222,7 @@ function App() {
       </section>
 
       <section className="section-fake-video">
-        <Image file="../public/play.svg" id={"play"} />
+        <Image file={play} id={"play"} />
         <h3>
           Aenean commodo ligula eget dolor sociis natoque penatibus et magnis
           dis parturient montes, nascetur ridiculus consectetur muse.
