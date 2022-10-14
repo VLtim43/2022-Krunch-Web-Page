@@ -4,7 +4,7 @@ export const LinkWrapper = styled.div`
   display: flex;
 
   a {
-    margin: 0 !important;
+   
     text-transform: uppercase;
     color: white;
     
@@ -14,6 +14,14 @@ export const LinkWrapper = styled.div`
     text-decoration: none;
     cursor: pointer;
   }
+
+  & .news {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0082f3;
+   }
 
   & .default:hover {
     color: #0082f3;

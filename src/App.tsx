@@ -7,6 +7,7 @@ import Footer from "./components/components/Footer/Footer";
 import Image from "./components/micro/img/Image";
 import About from "./components/micro/About/About";
 import { Design } from "./components/components/Design/Design";
+import { News } from "./components/components/News/News";
 
 import { useRef } from "react";
 import { BsChevronCompactDown } from "react-icons/bs";
@@ -207,7 +208,6 @@ function App() {
         </h3>
 
         <Button className="default" text="download now" />
-
       </section>
 
       <section className="section-news">
@@ -215,6 +215,35 @@ function App() {
           bigText="latest news"
           smallText="Check out our latest news and activities"
         />
+
+        <div className="news-grid">
+          <News
+            text={"Tempor incidunt labore dolor"}
+            date={"August 24, 2016"}
+            file={"../public/news1.jpeg"}
+            smallText={
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+          />
+
+          <News
+            text={"Tempor incidunt labore dolor"}
+            date={"August 24, 2016"}
+            file={"../public/news2.jpeg"}
+            smallText={
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+          />
+
+          <News
+            text={"Tempor incidunt labore dolor"}
+            date={"August 24, 2016"}
+            file={"../public/news3.jpeg"}
+            smallText={
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+          />
+        </div>
 
         <Button className="transparent-b" text="read our blog" />
       </section>

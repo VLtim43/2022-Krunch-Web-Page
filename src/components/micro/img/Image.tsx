@@ -2,7 +2,7 @@ import React from "react";
 import { ImageWrapper } from "./Image.styled";
 
 type Props = {
-  file: string;
+  file: any;
   id: string;
   text?: string;
   text2?: string;
