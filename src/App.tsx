@@ -13,6 +13,25 @@ import { useRef } from "react";
 import { BsChevronCompactDown } from "react-icons/bs";
 
 import glassesImg from "../public/glasses.jpg";
+import d1 from "../public/d1.jpg"
+import d2 from "../public/d2.jpg"
+import d3 from "../public/d3.jpg"
+import d4 from "../public/d4.jpg"
+import d5 from "../public/d5.jpg"
+import d6 from "../public/d6.jpg"
+import d7 from "../public/d7.jpg"
+import d8 from "../public/d8.jpg"
+
+
+import guy1 from "../public/guy1.jpg"
+import guy2 from "../public/guy2.jpg"
+import guy3 from "../public/guy3.jpg"
+import guy4 from "../public/guy4.jpg"
+
+import news1 from "../public/news1.jpg"
+import news2 from "../public/news2.jpg"
+import news3 from "../public/news3.jpg"
+
 
 function App() {
   //button scroll
@@ -94,18 +113,18 @@ function App() {
         />
 
         <div className="image-grid">
-          <Image file="../public/glasses.jpg" id="grid" text="graphic design" />
-          <Image file="../public/glasses.jpg" id="grid" text="print design" />
-          <Image file="../public/glasses.jpg" id="grid" text="mobile design" />
-          <Image file="../public/glasses.jpg" id="grid" text="3d design" />
+          <Image file={d1} id="grid" text="graphic design" />
+          <Image file={d8} id="grid" text="print design" />
+          <Image file={d5} id="grid" text="mobile design" />
+          <Image file={d4} id="grid" text="3d design" />
           <Image
-            file="../public/glasses.jpg"
+            file={d7}
             id="grid"
             text="interior design"
           />
-          <Image file="../public/glasses.jpg" id="grid" text="web design" />
-          <Image file="../public/glasses.jpg" id="grid" text="graphic design" />
-          <Image file="../public/glasses.jpg" id="grid" text="home design" />
+          <Image file={d2} id="grid" text="web design" />
+          <Image file={d3} id="grid" text="graphic design" />
+          <Image file={d8} id="grid" text="home design" />
         </div>
 
         <p>Have a Project in Mind?</p>
@@ -174,25 +193,25 @@ function App() {
 
         <div className="team-grid">
           <Image
-            file="../public/guy1.jpg"
+            file={guy1}
             id={"grid-2"}
             text={"MICHAEL THOMAS"}
             text2={"Creative Director"}
           />
           <Image
-            file="../public/guy2.jpg"
+            file={guy2}
             id={"grid-2"}
             text={"ALEXA MEYER"}
             text2={"Creative Director"}
           />
           <Image
-            file="../public/guy3.jpg"
+            file={guy3}
             id={"grid-2"}
             text={"JEFFREY STEWARD"}
             text2={"Web Developer"}
           />
           <Image
-            file="../public/guy4.jpg"
+            file={guy4}
             id={"grid-2"}
             text={"BRUCE MOORE"}
             text2={"Web Designer"}

@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const ButtonWrapper = styled.div`
   display: flex;
+ 
+  button:focus {outline:0;}
 
   button {
     font-family: 'Open Sans', sans-serif;
