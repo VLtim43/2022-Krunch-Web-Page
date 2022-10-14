@@ -6,19 +6,29 @@ section:not(.header-section) {
 
 
 @media only screen and (max-width: 1320px) {
+
+    
     section:not(.header-section) {
         width: 100%;
     }
 
-    .section-content {
-        width: 100% !important;
-        justify-content: space-around !important;
+    #glasses {
+        display: none;
     }
+    
 
     .service-grid {
         margin: 0px !important;
         max-width: 120px !important;
         display: flex;
+    }
+
+    .section-team {
+        display: none !important;
+    }
+
+    .section-contact {
+        display: none !important;
     }
     
 

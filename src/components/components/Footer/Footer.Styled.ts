@@ -15,6 +15,20 @@ export const FooterWrapper = styled.footer`
   width:100%;
   
 
+  @media only screen and (max-width: 1060px) {
+
+    height: 70px;
+
+    a {
+      display:none;
+    }
+
+    .about {
+      display: none !important;
+    }
+
+  }
+
 
   a {
     font-size: 13px !important;
