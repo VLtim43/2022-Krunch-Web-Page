@@ -11,6 +11,8 @@ import { Design } from "./components/components/Design/Design";
 import { useRef } from "react";
 import { BsChevronCompactDown } from "react-icons/bs";
 
+import glassesImg from "../public/glasses.jpg";
+
 function App() {
   //button scroll
   const ref = useRef<null | HTMLDivElement>(null);
@@ -80,7 +82,7 @@ function App() {
             </p>
           </div>
 
-          <Image file="../glasses.jpg" id="glasses" />
+          <Image file={glassesImg} id="glasses" />
         </div>
       </section>
 
