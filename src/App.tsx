@@ -20,7 +20,9 @@ import d4 from "../public/d4.jpg"
 import d5 from "../public/d5.jpg"
 import d6 from "../public/d6.jpg"
 import d7 from "../public/d7.jpg"
-F
+import d8 from "../public/d8.jpg"
+
+
 
 import guy1 from "../public/guy1.jpg"
 import guy2 from "../public/guy2.jpg"
