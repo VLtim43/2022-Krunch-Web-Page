@@ -9,8 +9,20 @@ export const AboutWrapper = styled.div`
   font-family: Nunito, sans-serif;
   color: #333;
   line-height: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 
+  @media only screen and (max-width: 1320px) {
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 1.3rem !important;
+    }
+
+    p {
+      font-size: 1rem !important;
+
+    }
+  }
 
   h2 {
     text-transform: uppercase;

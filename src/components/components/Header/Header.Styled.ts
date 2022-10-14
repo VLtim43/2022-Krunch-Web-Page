@@ -2,19 +2,53 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
   background-color: rgba(0, 0, 0, 0.8);
-  padding-top: 1.5rem;
   display: flex;
   justify-content: center;
   height: 100px;
 
 
+  @media only screen and (max-width: 600px) {
+
+    & {
+      display: none !important;
+    }
+  }
+
+
+  @media only screen and (max-width: 1300px) {
+
+    .header-div {
+      height: 20vw !important;
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .header-div {
+      margin: 0px !important;
+    }
+
+    .header-img {
+      margin-top: 2rem;
+    }
+
+    a {
+      display: none;
+    }
+  }
 
   &.a {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80px;
     z-index: 1;
     width: 100%;
     position: fixed;
     top: 0%;
+  }
+
+  &.b {
+    padding-top: 1.5rem;
   }
 
   .header-div {
@@ -41,8 +75,6 @@ export const HeaderWrapper = styled.header`
   }
 
   img {
-    margin: 30px 20px;
-    width: 110px;
-    height: 25.3px;
+    margin: 2rem 1rem 1rem 5rem;
   }
 `;

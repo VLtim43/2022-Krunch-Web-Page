@@ -7,9 +7,32 @@ import Footer from "./components/components/Footer/Footer";
 import Image from "./components/micro/img/Image";
 import About from "./components/micro/About/About";
 import { Design } from "./components/components/Design/Design";
+import { News } from "./components/components/News/News";
 
 import { useRef } from "react";
 import { BsChevronCompactDown } from "react-icons/bs";
+
+import glassesImg from "../public/glasses.jpg";
+import d1 from "../public/d1.jpg"
+import d2 from "../public/d2.jpg"
+import d3 from "../public/d3.jpg"
+import d4 from "../public/d4.jpg"
+import d5 from "../public/d5.jpg"
+import d6 from "../public/d6.jpg"
+import d7 from "../public/d7.jpg"
+F
+
+import guy1 from "../public/guy1.jpg"
+import guy2 from "../public/guy2.jpg"
+import guy3 from "../public/guy3.jpg"
+import guy4 from "../public/guy4.jpg"
+
+import news1 from "../public/news1.jpeg"
+import news2 from "../public/news2.jpeg"
+import news3 from "../public/news3.jpeg"
+
+import play from "../public/play.svg"
+
 
 
 function App() {
@@ -57,7 +80,8 @@ function App() {
         />
       </section>
 
-      <section className="about-section" ref={ref}>     
+      <section className="about-section">
+        <span ref={ref}></span>
         <About
           bigText="About us"
           smallText="Setibulum rutrum quam vitae fringilla tincidunt"
@@ -80,7 +104,7 @@ function App() {
             </p>
           </div>
 
-          <Image file="../public/glasses.jpg" id="glasses" />
+          <Image file={glassesImg} id="glasses" />
         </div>
       </section>
 
@@ -90,25 +114,26 @@ function App() {
           smallText="An eye for detail makes our work beautiful"
         />
 
-       
-         
         <div className="image-grid">
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-         <Image file="../public/glasses.jpg" id="grid" />
-        </div> 
-
+          <Image file={d1} id="grid" text="graphic design" />
+          <Image file={d6} id="grid" text="print design" />
+          <Image file={d5} id="grid" text="mobile design" />
+          <Image file={d4} id="grid" text="3d design" />
+          <Image
+            file={d7}
+            id="grid"
+            text="interior design"
+          />
+          <Image file={d2} id="grid" text="web design" />
+          <Image file={d3} id="grid" text="graphic design" />
+          <Image file={d8} id="grid" text="home design" />
+        </div>
 
         <p>Have a Project in Mind?</p>
         <Button className="transparent-b" text="contact now" id="contact" />
       </section>
 
-      {/* <section className="section-testimonials"></section> */}
+      <section className="section-testimonials"></section>
 
       <section className="section-services">
         <About
@@ -116,15 +141,50 @@ function App() {
           smallText="Scope of our featured premium services"
         />
 
-       <div className="service-grid">
-        <Design bigText={"web design"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"monitor"}/>
-        <Design bigText={"web design"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"web"}/>
-        <Design bigText={"apps design"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"android"}/>
-        <Design bigText={"PHOTOGRAPHY"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"camera"}/>
-        <Design bigText={"branding"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"wand"}/>
-        <Design bigText={"hosting"} smallText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."} icon={"globe"}/>
-       </div>
-
+        <div className="service-grid">
+          <Design
+            bigText={"web design"}
+            smallText={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."
+            }
+            icon={"monitor"}
+          />
+          <Design
+            bigText={"web design"}
+            smallText={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."
+            }
+            icon={"web"}
+          />
+          <Design
+            bigText={"apps design"}
+            smallText={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."
+            }
+            icon={"android"}
+          />
+          <Design
+            bigText={"PHOTOGRAPHY"}
+            smallText={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."
+            }
+            icon={"camera"}
+          />
+          <Design
+            bigText={"branding"}
+            smallText={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."
+            }
+            icon={"wand"}
+          />
+          <Design
+            bigText={"hosting"}
+            smallText={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim eros elementum tristique. Duis cursus, viverra ornare, eros dolor interdum nulla, commodo diam libero vitae."
+            }
+            icon={"globe"}
+          />
+        </div>
       </section>
 
       <section className="section-team">
@@ -132,6 +192,43 @@ function App() {
           bigText="awsome team"
           smallText="Setibulum rutrum quam vitae fringilla tincidunt"
         />
+
+        <div className="team-grid">
+          <Image
+            file={guy1}
+            id={"grid-2"}
+            text={"MICHAEL THOMAS"}
+            text2={"Creative Director"}
+          />
+          <Image
+            file={guy2}
+            id={"grid-2"}
+            text={"ALEXA MEYER"}
+            text2={"Creative Director"}
+          />
+          <Image
+            file={guy3}
+            id={"grid-2"}
+            text={"JEFFREY STEWARD"}
+            text2={"Web Developer"}
+          />
+          <Image
+            file={guy4}
+            id={"grid-2"}
+            text={"BRUCE MOORE"}
+            text2={"Web Designer"}
+          />
+        </div>
+      </section>
+
+      <section className="section-fake-video">
+        <Image file={play} id={"play"} />
+        <h3>
+          Aenean commodo ligula eget dolor sociis natoque penatibus et magnis
+          dis parturient montes, nascetur ridiculus consectetur muse.
+        </h3>
+
+        <Button className="default" text="download now" />
       </section>
 
       <section className="section-news">
@@ -139,6 +236,35 @@ function App() {
           bigText="latest news"
           smallText="Check out our latest news and activities"
         />
+
+        <div className="news-grid">
+          <News
+            text={"Tempor incidunt labore dolor"}
+            date={"August 24, 2016"}
+            file={news1}
+            smallText={
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+          />
+
+          <News
+            text={"Tempor incidunt labore dolor"}
+            date={"August 24, 2016"}
+            file={news2}
+            smallText={
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+          />
+
+          <News
+            text={"Tempor incidunt labore dolor"}
+            date={"August 24, 2016"}
+            file={news3}
+            smallText={
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+          />
+        </div>
 
         <Button className="transparent-b" text="read our blog" />
       </section>
@@ -148,6 +274,15 @@ function App() {
           bigText="keep in touch"
           smallText="Setibulum rutrum quam vitae fringilla tincidunt"
         />
+
+        <form className="form">
+          <div>
+            <input type={"text"}  placeholder="Enter your name"/>
+            <input type={"text"} placeholder="Enter your name"/>
+          </div>
+          <input type={"email"}  placeholder="Enter your email address"/>
+          <textarea placeholder="Your menssage"/>
+        </form>
 
         <Button className="default" text="send message" />
       </section>
