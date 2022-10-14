@@ -9,7 +9,7 @@ export const AboutWrapper = styled.div`
   font-family: Nunito, sans-serif;
   color: #333;
   line-height: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 
 
   h2 {

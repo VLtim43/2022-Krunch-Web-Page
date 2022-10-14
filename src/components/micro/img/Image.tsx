@@ -5,9 +5,10 @@ type Props = {
   file: string;
   id: string;
   text?: string;
+  text2?: string;
 };
 
-const Image = ({ file, id,text }: Props) => {
+const Image = ({ file, id, text, text2 }: Props) => {
   if (id == "grid") {
     return (
       <ImageWrapper className="container">
@@ -15,6 +16,19 @@ const Image = ({ file, id,text }: Props) => {
         <div className="overlay">
           <div className="text">{text}</div>
         </div>
+      </ImageWrapper>
+    );
+  } else if (id == "grid-2") {
+    return (
+      <ImageWrapper>
+        <div className="container">
+          <img src={file} className="image" id={id} />
+          <div className="overlay">
+            {/* <div className="text">{text}</div> */}
+          </div>
+        </div>
+        <h3>{text}</h3>
+        <p>{text2}</p>
       </ImageWrapper>
     );
   } else {
@@ -25,7 +39,5 @@ const Image = ({ file, id,text }: Props) => {
     );
   }
 };
-
-
 
 export default Image;
